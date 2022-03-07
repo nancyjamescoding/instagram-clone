@@ -1,0 +1,73 @@
+body{
+    background-color: white;
+}
+header{
+    background-color:#FAFAFA;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 26px 20px; */
+    flex-wrap: wrap;
+    height: 70px;
+}
+.navigation a{
+    color: black;
+}
+
+.instalogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    font-weight: 900;
+    width: 30%;
+    height: 100%;
+}
+
+.search_bar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    background-image: url(../images/icons/dollar.png);
+    background-repeat: no-repeat;
+    background-position: 2px 3px;
+    /* background-color: brown; */
+    
+}
+
+.search_bar input[type=text] {
+    height: 50%;
+    width: 70%;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .15);
+    background-color: white;
+    font-size: 16px;
+  }
+  
+
+.contacts_icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    
+
+}
+.contacts_icons a{
+    padding-left: 30px;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
