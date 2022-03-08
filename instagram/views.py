@@ -1,8 +1,9 @@
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
+from django.shortcuts import redirect, render
 from .models import Post
 from django.views.generic import(
-    ListView, TemplateView
+    ListView
 )
 
 # Create your views here.
@@ -17,5 +18,9 @@ class PostListView(ListView):
 
 
 # Lamding page view
-class Home(TemplateView):
-    template_name = 'instagram/home.html'
+def home(request):
+    if request.user.is_authenticated:
+            # If a user is logged in, redirect them to a page informing them of such
+        return redirect('/profile')
+    else:
+        return render(request, 'instagram/home.html')

@@ -32,16 +32,11 @@ header{
 }
 
 .search_bar {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 30%;
     height: 100%;
-    background-image: url(../images/icons/dollar.png);
-    background-repeat: no-repeat;
-    background-position: 2px 3px;
-    /* background-color: brown; */
-    
 }
 
 .search_bar input[type=text] {
@@ -53,6 +48,11 @@ header{
     border-color: rgba(0, 0, 0, .15);
     background-color: white;
     font-size: 16px;
+    background-image: url(../../../media/search1.png);
+    background-repeat: no-repeat;
+    background-position: 5px 7px;
+    background-size: 20px 20px;
+    padding-left: 8%;
   }
   
 
@@ -90,7 +90,7 @@ header{
 }
 .profile_image{
     display:inline-block;
-    background-color:navy;
+    background-color:aqua;
     height:30px;
     width: 30px;
     border: 0 solid #000;
@@ -121,7 +121,7 @@ header{
     padding: #ccc;
 
 }
-.post_image{
+.post_image img {
     width: 100%;
     height: 614px;
 }
