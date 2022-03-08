@@ -60,7 +60,7 @@ DATABASES['default'].update(db_from_env)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
-django_heroku.settings(locals())
+
 
 
 # Application definition
@@ -169,7 +169,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
-
+django_heroku.settings(locals())
 
 
 # Default primary key field type
