@@ -1,16 +1,19 @@
 {% extends 'instagram/base.html' %}
 {% block content %}
-    <h1 style="text-align: center; font-family: cursive;">Welcome Home </h1>
-    <img src="../../../media/Instagram-landing-page-element-headline.jpg.jpg">
-    <div class="card" style="float: right; display: flex;">
-     <button>Login
-         <a href="/accounts/login/"></a>
-     </button>
+    <h1 style="text-align: center; font-family: cursive;">Instagram </h1>
+    <div class="card" style="align-items: center;">
+        <img src="../../../media/Screenshot 2022-03-09 at 01.20.20.png" width="50%" height="80%">
+    <div class="card-body" style="float: right;">
+        <form action="/accounts/register/">
+            <input type="submit" value="Register" />
+        </form>
     </div>
 
-    <div class="card" style="float: right; display: flex;">
-        <button>Login
-            <a href="/accounts/register/"></a>
-        </button>
+    <div class="card-body" style="float: right;">
+        <form action="/accounts/login/">
+            <input type="submit" value="Login" />
+        </form>
+        
+    </div>
     </div>
 {%endblock%}

@@ -175,3 +175,22 @@ header{
     padding:0px 16px;
     text-transform: uppercase;
 }
+
+
+.homepage {
+    width: 100%;
+    height: 100vh;
+    background-color: salmon;
+}
+
+.homepage-left {
+    width: 50%;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.homepage-right {
+    width: 50%;
+    height: 100vh;
+    background-color: red;
+}
